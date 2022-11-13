@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Concert+One&family=Orbitron:wght@800&family=Rubik+Glitch&display=swap');
 
+html, 
+body {
+    height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Roboto, sans-serif;
-  background: url(/images/body-bg.jpg) no-repeat center center fixed;
+  background: url(../images/body-bg.jpg) no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-
 }
 
 /* display this row with flex and use wrap (= respect columns' widths) */
@@ -24,22 +27,18 @@ body {
   cursor: pointer;
 }
 
-/* .topSection .buttons .btn {
-  width: 100%;
-} */
 
 .topSection .buttons .top-btn-1 {
   padding: 10px;
   font-size: 13px;
-  background-image: url(/images/blue-btn.png);
+  background-image: url(../images/blue-btn.png);
   border-radius: 10px;
-  
 }
 
 .topSection .buttons .top-btn-2 {
   padding: 10px;
   font-size: 13px;
-  background-image: url(/images/red-btn.png);
+  background-image: url(../images/red-btn.png);
   border-radius: 10px;
 }
 
@@ -49,70 +48,14 @@ body {
   font-size: 15px !important;
 }
 
-/* vertical spacing between columns */
-/* [class*="col-"] {
-  margin-bottom: 200px;
-} */
-/* .matchHistory {
-  margin-top: 230px;
-} */
-
-/* .content {
-  height: 100%;
-  padding: 20px 20px 10px;
-  color: #fff;
-} */
-
-
-/* Demo backgrounds and styling*/
-/* .colour-1 {
-  background: #483C46;
-  color: #fff;
-}
-
-.colour-2 {
-  background: #3C6E71;
-} */
-/* 
-.colour-3 {
-  background: #70AE6E;
-}
-
-.colour-4 {
-  background: #82204A;
-}
-
-.colour-5 {
-  background: #558C8C;
-}
-
-.colour-6 {
-  background: #917C78;
-} */
-
-
-/* .content h3 {
-  margin-top: 0px;
-  font-weight: 300;
-} */
-
-/* h1 {
-  font-weight: 300;
-  margin-bottom: 40px;
-} */
-
-
 .gameScreen {
   margin-top: 20px;
-  background: url(/images/bg4.jpg);
+  background: url(../images/bg4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 500px;
-
-  /* font-family: 'Concert One', cursive; */
   font-family: 'Orbitron', sans-serif;
-  /* border: 5px solid #111345; */
 
   animation: flicker 1.5s infinite alternate;  
   border: 0.1rem solid #fff;
@@ -133,7 +76,6 @@ body {
 
 #who {
   color: #4f4f51 ;
-  /* font-family: 'Rubik Glitch', cursive; */
   font-family: 'Bungee', cursive;
   font-size: 40px;
 }
@@ -169,7 +111,7 @@ body {
   padding: 10px;
   border-radius: 20px 0 0 20px;
   color: #E1E1E3;
-  background-image: url(/images/bottomSection-left.jpg);
+  background-image: url(../images/bottomSection-left.jpg);
   background-size:contain;
   background-repeat: no-repeat;
   background-size: cover;
@@ -181,7 +123,7 @@ body {
   font-size: 15px;
   color: #E1E1E3;
   border-radius: 0 20px 20px 0;
-  background-image: url(/images/bottomSection-bg.jpg);
+  background-image: url(../images/bottomSection-bg.jpg);
   background-size:contain;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,8 +132,6 @@ body {
 
 .buttons {
   width: 100%;
-  /* border-collapse: collapse; */
-
 }
 
 .buttons .btn {
@@ -201,7 +141,6 @@ body {
   font-size: 13px;
   background-color: #0445A3;
   color: #eae8f3;
-  /* background-image: url(/images/btn-bg-f.jpg); */
   background-size:contain;
   background-repeat: no-repeat;
   background-size: cover;
@@ -211,4 +150,8 @@ body {
 .bottomSection .buttons .btn:hover {
   background-color: #042553;
   color: black;
+}
+
+#rounds {
+  font-size: 50px;
 }
